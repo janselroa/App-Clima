@@ -1,5 +1,6 @@
 from tkinter import *
 import requests
+import platform
 
 #e0eda8193a6a3795b8e4fe4b8594262f
 #api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -29,8 +30,10 @@ def clima(ciudad):
 
 ventana=Tk()
 ventana.title('App Clima')
-
-ventana.iconbitmap('img/icono.ico')
+if platform.system() == "Windows":
+    ventana.iconbitmap('img/icono.ico')
+else:
+    root.iconphoto(True, PhotoImage(os.path.join(sys.path[0], "img/icono.xbm")))
 
 ventana.geometry('450x550')
 texto_ciudad=Entry(ventana, font=('Courier', 18, 'normal'), justify='center')
