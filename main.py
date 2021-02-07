@@ -33,7 +33,7 @@ ventana.title('App Clima')
 if platform.system() == "Windows":
     ventana.iconbitmap('img/icono.ico')
 else:
-    root.iconphoto(True, PhotoImage(os.path.join(sys.path[0], "img/icono.xbm")))
+    ventana.iconphoto(True, PhotoImage(os.path.join(sys.path[0], "img/icono.xbm")))
 
 ventana.geometry('450x550')
 texto_ciudad=Entry(ventana, font=('Courier', 18, 'normal'), justify='center')
