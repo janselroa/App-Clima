@@ -1,6 +1,7 @@
 from tkinter import *
 import requests
 import platform
+import os
 
 #e0eda8193a6a3795b8e4fe4b8594262f
 #api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
