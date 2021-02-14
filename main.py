@@ -37,6 +37,7 @@ else:
     ventana.iconphoto(True, PhotoImage(os.path.join(sys.path[0], "img/icono.xbm")))
 
 ventana.geometry('450x550')
+ventana.resizable(0,0)
 texto_ciudad=Entry(ventana, font=('Courier', 18, 'normal'), justify='center')
 texto_ciudad.pack(padx=30, pady=30)
 obtener_clima=Button(ventana, text='Obtener Clima', command=lambda:clima(texto_ciudad.get()))
